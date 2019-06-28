@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */; };
-		B3C2E9E322C626F70075FDD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E222C626F70075FDD0 /* ViewController.swift */; };
+		B3C2E9E322C626F70075FDD0 /* PinboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */; };
 		B3C2E9E622C626F70075FDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E9E422C626F70075FDD0 /* Main.storyboard */; };
 		B3C2E9E822C626F70075FDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E9E722C626F70075FDD0 /* Assets.xcassets */; };
 		B3C2E9EB22C626F70075FDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E9E922C626F70075FDD0 /* LaunchScreen.storyboard */; };
@@ -19,12 +19,15 @@
 		B3C2EA0022C62EF80075FDD0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9FF22C62EF80075FDD0 /* Category.swift */; };
 		B3C2EA0222C62F000075FDD0 /* UrlProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0122C62F000075FDD0 /* UrlProfile.swift */; };
 		B3C2EA0422C6313D0075FDD0 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0322C6313D0075FDD0 /* URLs.swift */; };
+		B3C2EA0822C634840075FDD0 /* RegularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0622C634840075FDD0 /* RegularCell.swift */; };
+		B3C2EA0922C634840075FDD0 /* RegularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C2EA0722C634840075FDD0 /* RegularCell.xib */; };
+		B3C2EA0F22C635570075FDD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0E22C635570075FDD0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3C2E9DD22C626F70075FDD0 /* MindvalleyImageLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyImageLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3C2E9E222C626F70075FDD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardVC.swift; sourceTree = "<group>"; };
 		B3C2E9E522C626F70075FDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C2E9E722C626F70075FDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C2E9EA22C626F70075FDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		B3C2E9FF22C62EF80075FDD0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B3C2EA0122C62F000075FDD0 /* UrlProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProfile.swift; sourceTree = "<group>"; };
 		B3C2EA0322C6313D0075FDD0 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		B3C2EA0622C634840075FDD0 /* RegularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCell.swift; sourceTree = "<group>"; };
+		B3C2EA0722C634840075FDD0 /* RegularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegularCell.xib; sourceTree = "<group>"; };
+		B3C2EA0E22C635570075FDD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		B3C2E9F422C62B130075FDD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2EA0522C634280075FDD0 /* CustomCells */,
 				B3C2E9E422C626F70075FDD0 /* Main.storyboard */,
 			);
 			path = View;
@@ -108,7 +115,7 @@
 		B3C2E9F522C62B180075FDD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B3C2E9E222C626F70075FDD0 /* ViewController.swift */,
+				B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,8 +128,18 @@
 				B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */,
 				B3C2E9EC22C626F70075FDD0 /* Info.plist */,
 				B3C2EA0322C6313D0075FDD0 /* URLs.swift */,
+				B3C2EA0E22C635570075FDD0 /* Constants.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		B3C2EA0522C634280075FDD0 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2EA0622C634840075FDD0 /* RegularCell.swift */,
+				B3C2EA0722C634840075FDD0 /* RegularCell.xib */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C2EA0922C634840075FDD0 /* RegularCell.xib in Resources */,
 				B3C2E9EB22C626F70075FDD0 /* LaunchScreen.storyboard in Resources */,
 				B3C2E9E822C626F70075FDD0 /* Assets.xcassets in Resources */,
 				B3C2E9E622C626F70075FDD0 /* Main.storyboard in Resources */,
@@ -196,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C2E9E322C626F70075FDD0 /* ViewController.swift in Sources */,
+				B3C2E9E322C626F70075FDD0 /* PinboardVC.swift in Sources */,
+				B3C2EA0F22C635570075FDD0 /* Constants.swift in Sources */,
 				B3C2EA0422C6313D0075FDD0 /* URLs.swift in Sources */,
+				B3C2EA0822C634840075FDD0 /* RegularCell.swift in Sources */,
 				B3C2E9FE22C62E040075FDD0 /* Image.swift in Sources */,
 				B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */,
 				B3C2E9FC22C62D3E0075FDD0 /* ImageProfile.swift in Sources */,
