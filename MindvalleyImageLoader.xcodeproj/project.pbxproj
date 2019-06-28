@@ -22,6 +22,7 @@
 		B3C2EA0822C634840075FDD0 /* RegularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0622C634840075FDD0 /* RegularCell.swift */; };
 		B3C2EA0922C634840075FDD0 /* RegularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C2EA0722C634840075FDD0 /* RegularCell.xib */; };
 		B3C2EA0F22C635570075FDD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0E22C635570075FDD0 /* Constants.swift */; };
+		B3C2EA1222C636460075FDD0 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA1122C636460075FDD0 /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B3C2EA0622C634840075FDD0 /* RegularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCell.swift; sourceTree = "<group>"; };
 		B3C2EA0722C634840075FDD0 /* RegularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegularCell.xib; sourceTree = "<group>"; };
 		B3C2EA0E22C635570075FDD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3C2EA1122C636460075FDD0 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		B3C2E9DF22C626F70075FDD0 /* MindvalleyImageLoader */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2EA1022C636300075FDD0 /* DownloadService */,
 				B3C2E9F622C62B250075FDD0 /* Others */,
 				B3C2E9F322C62B090075FDD0 /* MainView */,
 			);
@@ -140,6 +143,14 @@
 				B3C2EA0722C634840075FDD0 /* RegularCell.xib */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B3C2EA1022C636300075FDD0 /* DownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2EA1122C636460075FDD0 /* DownloadService.swift */,
+			);
+			path = DownloadService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 				B3C2EA0422C6313D0075FDD0 /* URLs.swift in Sources */,
 				B3C2EA0822C634840075FDD0 /* RegularCell.swift in Sources */,
 				B3C2E9FE22C62E040075FDD0 /* Image.swift in Sources */,
+				B3C2EA1222C636460075FDD0 /* DownloadService.swift in Sources */,
 				B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */,
 				B3C2E9FC22C62D3E0075FDD0 /* ImageProfile.swift in Sources */,
 				B3C2E9F822C62BA80075FDD0 /* User.swift in Sources */,
