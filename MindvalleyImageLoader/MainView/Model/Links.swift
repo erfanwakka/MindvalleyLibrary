@@ -10,10 +10,11 @@ import Foundation
 
 
 struct Links: Decodable {
-    var own: String
-    var html: String
-    var photos: String
-    var likes: String
+    var own: String?
+    var html: String?
+    var photos: String?
+    var likes: String?
+    var download: String?
     
     enum customKeys: String, CodingKey {
         case own = "self"
