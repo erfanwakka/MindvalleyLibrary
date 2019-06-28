@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    
+    func downloadImage(with url: URL) {
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error == nil, let unrwappedData = data {
+                print(unrwappedData)
+            }
+        }.resume()
     }
 
 
