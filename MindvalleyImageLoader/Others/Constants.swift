@@ -12,5 +12,6 @@ import Foundation
 struct Constants {
     struct CellIdentifiers {
         static var regularCell = "RegularCell"
+        static var bottomView = "bottomView"
     }
 }
