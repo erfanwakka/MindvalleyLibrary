@@ -10,13 +10,11 @@ import UIKit
 
 class RegularCell: UICollectionViewCell {
     
-    //MARK: - Outlets -
-    
-    @IBOutlet weak var image: UIImageView!
-    
-    //MARK: - Actions -
-    
-    
-    //MARK: - Functions -
+    @IBOutlet weak var image: UIImageView! {
+        didSet {
+            image.layer.cornerRadius = 8
+            image.layer.masksToBounds = true
+        }
+    }
 
 }
