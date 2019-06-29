@@ -13,5 +13,4 @@ public struct Request {
     public let path: String
     public let headers: [String: String]?
     public let params: [String: Any?]?
-    
 }
