@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B318F3EE22C6751E0074CA8C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3ED22C6751E0074CA8C /* Request.swift */; };
-		B318F3F022C6793D0074CA8C /* DownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3EF22C6793D0074CA8C /* DownloadError.swift */; };
+		B318F3F022C6793D0074CA8C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3EF22C6793D0074CA8C /* Enums.swift */; };
+		B36FE93022C73BE700710C33 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE92F22C73BE700710C33 /* RequestProtocol.swift */; };
+		B36FE93722C74FA200710C33 /* MainViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE93622C74FA200710C33 /* MainViewService.swift */; };
+		B36FE93B22C7784100710C33 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE93A22C7784100710C33 /* ImageDownloader.swift */; };
+		B36FE93D22C788AB00710C33 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE93C22C788AB00710C33 /* HTTPURLResponseExtension.swift */; };
+		B36FE93F22C78E8E00710C33 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE93E22C78E8E00710C33 /* BottomView.swift */; };
 		B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */; };
 		B3C2E9E322C626F70075FDD0 /* PinboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */; };
 		B3C2E9E622C626F70075FDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E9E422C626F70075FDD0 /* Main.storyboard */; };
@@ -25,12 +30,17 @@
 		B3C2EA0922C634840075FDD0 /* RegularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C2EA0722C634840075FDD0 /* RegularCell.xib */; };
 		B3C2EA0F22C635570075FDD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA0E22C635570075FDD0 /* Constants.swift */; };
 		B3C2EA1222C636460075FDD0 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA1122C636460075FDD0 /* DownloadService.swift */; };
-		B3C2EA1622C6486C0075FDD0 /* DiscardableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA1522C6486C0075FDD0 /* DiscardableImage.swift */; };
+		B3C2EA1622C6486C0075FDD0 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2EA1522C6486C0075FDD0 /* DiscardableData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B318F3ED22C6751E0074CA8C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B318F3EF22C6793D0074CA8C /* DownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadError.swift; sourceTree = "<group>"; };
+		B318F3EF22C6793D0074CA8C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B36FE92F22C73BE700710C33 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		B36FE93622C74FA200710C33 /* MainViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewService.swift; sourceTree = "<group>"; };
+		B36FE93A22C7784100710C33 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		B36FE93C22C788AB00710C33 /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
+		B36FE93E22C78E8E00710C33 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B3C2E9DD22C626F70075FDD0 /* MindvalleyImageLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyImageLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardVC.swift; sourceTree = "<group>"; };
@@ -49,7 +59,7 @@
 		B3C2EA0722C634840075FDD0 /* RegularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegularCell.xib; sourceTree = "<group>"; };
 		B3C2EA0E22C635570075FDD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B3C2EA1122C636460075FDD0 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
-		B3C2EA1522C6486C0075FDD0 /* DiscardableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableImage.swift; sourceTree = "<group>"; };
+		B3C2EA1522C6486C0075FDD0 /* DiscardableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B36FE93522C74F4800710C33 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B36FE93622C74FA200710C33 /* MainViewService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B3C2E9D422C626F60075FDD0 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +123,7 @@
 		B3C2E9F322C62B090075FDD0 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				B36FE93522C74F4800710C33 /* Service */,
 				B3C2E9F522C62B180075FDD0 /* Controller */,
 				B3C2E9F422C62B130075FDD0 /* View */,
 				B3C2E9F222C62AFC0075FDD0 /* Model */,
@@ -147,6 +166,7 @@
 			children = (
 				B3C2EA0622C634840075FDD0 /* RegularCell.swift */,
 				B3C2EA0722C634840075FDD0 /* RegularCell.xib */,
+				B36FE93E22C78E8E00710C33 /* BottomView.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -154,10 +174,13 @@
 		B3C2EA1022C636300075FDD0 /* DownloadService */ = {
 			isa = PBXGroup;
 			children = (
-				B3C2EA1522C6486C0075FDD0 /* DiscardableImage.swift */,
+				B3C2EA1522C6486C0075FDD0 /* DiscardableData.swift */,
 				B3C2EA1122C636460075FDD0 /* DownloadService.swift */,
 				B318F3ED22C6751E0074CA8C /* Request.swift */,
-				B318F3EF22C6793D0074CA8C /* DownloadError.swift */,
+				B318F3EF22C6793D0074CA8C /* Enums.swift */,
+				B36FE92F22C73BE700710C33 /* RequestProtocol.swift */,
+				B36FE93A22C7784100710C33 /* ImageDownloader.swift */,
+				B36FE93C22C788AB00710C33 /* HTTPURLResponseExtension.swift */,
 			);
 			path = DownloadService;
 			sourceTree = "<group>";
@@ -239,16 +262,21 @@
 				B3C2EA0422C6313D0075FDD0 /* URLs.swift in Sources */,
 				B3C2EA0822C634840075FDD0 /* RegularCell.swift in Sources */,
 				B3C2E9FE22C62E040075FDD0 /* Image.swift in Sources */,
+				B36FE93D22C788AB00710C33 /* HTTPURLResponseExtension.swift in Sources */,
+				B36FE93B22C7784100710C33 /* ImageDownloader.swift in Sources */,
 				B3C2EA1222C636460075FDD0 /* DownloadService.swift in Sources */,
 				B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */,
 				B3C2E9FC22C62D3E0075FDD0 /* ImageProfile.swift in Sources */,
-				B3C2EA1622C6486C0075FDD0 /* DiscardableImage.swift in Sources */,
+				B3C2EA1622C6486C0075FDD0 /* DiscardableData.swift in Sources */,
+				B36FE93722C74FA200710C33 /* MainViewService.swift in Sources */,
 				B3C2E9F822C62BA80075FDD0 /* User.swift in Sources */,
 				B3C2E9FA22C62C5C0075FDD0 /* Links.swift in Sources */,
+				B36FE93022C73BE700710C33 /* RequestProtocol.swift in Sources */,
 				B318F3EE22C6751E0074CA8C /* Request.swift in Sources */,
 				B3C2EA0022C62EF80075FDD0 /* Category.swift in Sources */,
-				B318F3F022C6793D0074CA8C /* DownloadError.swift in Sources */,
+				B318F3F022C6793D0074CA8C /* Enums.swift in Sources */,
 				B3C2EA0222C62F000075FDD0 /* UrlProfile.swift in Sources */,
+				B36FE93F22C78E8E00710C33 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
