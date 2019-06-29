@@ -8,20 +8,20 @@
 
 import UIKit
 
-open class DiscardableImage: NSObject, NSDiscardableContent {
+open class DiscardableData: NSObject, NSDiscardableContent {
     
     var count: UInt = 0
-    private(set) public var image: UIImage?
+    private(set) public var data: Data?
     
     
-    public init(image: UIImage) {
-        self.image = image
+    public init(data: Data) {
+        self.data = data
     }
     
     public func beginContentAccess() -> Bool {
-        if image == nil { return image == nil }
+        if data == nil { return data == nil }
         count += 1
-        return image != nil
+        return data != nil
     }
     
     public func endContentAccess() {
@@ -29,11 +29,11 @@ open class DiscardableImage: NSObject, NSDiscardableContent {
     }
     
     public func discardContentIfPossible() {
-        if count == 0 { image = nil }
+        if count == 0 { data = nil }
     }
     
     public func isContentDiscarded() -> Bool {
-        return image == nil
+        return data == nil
     }
     
 }
