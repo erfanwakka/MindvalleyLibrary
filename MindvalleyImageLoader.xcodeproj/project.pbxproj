@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B318F3EE22C6751E0074CA8C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3ED22C6751E0074CA8C /* Request.swift */; };
-		B318F3F022C6793D0074CA8C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3EF22C6793D0074CA8C /* Error.swift */; };
+		B318F3F022C6793D0074CA8C /* DownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B318F3EF22C6793D0074CA8C /* DownloadError.swift */; };
 		B3C2E9E122C626F70075FDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */; };
 		B3C2E9E322C626F70075FDD0 /* PinboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */; };
 		B3C2E9E622C626F70075FDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E9E422C626F70075FDD0 /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		B318F3ED22C6751E0074CA8C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B318F3EF22C6793D0074CA8C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B318F3EF22C6793D0074CA8C /* DownloadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadError.swift; sourceTree = "<group>"; };
 		B3C2E9DD22C626F70075FDD0 /* MindvalleyImageLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyImageLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2E9E022C626F70075FDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C2E9E222C626F70075FDD0 /* PinboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardVC.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				B3C2EA1522C6486C0075FDD0 /* DiscardableImage.swift */,
 				B3C2EA1122C636460075FDD0 /* DownloadService.swift */,
 				B318F3ED22C6751E0074CA8C /* Request.swift */,
-				B318F3EF22C6793D0074CA8C /* Error.swift */,
+				B318F3EF22C6793D0074CA8C /* DownloadError.swift */,
 			);
 			path = DownloadService;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 				B3C2E9FA22C62C5C0075FDD0 /* Links.swift in Sources */,
 				B318F3EE22C6751E0074CA8C /* Request.swift in Sources */,
 				B3C2EA0022C62EF80075FDD0 /* Category.swift in Sources */,
-				B318F3F022C6793D0074CA8C /* Error.swift in Sources */,
+				B318F3F022C6793D0074CA8C /* DownloadError.swift in Sources */,
 				B3C2EA0222C62F000075FDD0 /* UrlProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
