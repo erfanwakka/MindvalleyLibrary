@@ -8,45 +8,89 @@
 
 import UIKit
 
-class DownloadService {
+public protocol Network {
+    func request(with request: Request, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void)
+}
+public class DownloadService: Network {
     
+    
+    
+    //MARK: - Vars -
+    
+    public typealias onSuccessHandler = (Data) -> Void
+    public typealias onErrorHandler = (Error) -> Void
+    
+    public static var shared = DownloadService()
+    
+    private var dataCache = NSCache<NSURL, DiscardableData>()
+    
+    //MARK: - Init -
     
     private init() {}
-    static var shared = DownloadService()
     
-    func downloadImage(with url: URL, completionHandler: @escaping (_ data: UIImage?) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, res, error) in
-            if error == nil, let unrwappedData = data {
-                let image = UIImage(data: unrwappedData)
-                DispatchQueue.main.async {
-                    completionHandler(image)
-                }
-            } else {
-                DispatchQueue.main.async {
-                    completionHandler(nil)
-                }
+    //MARK: - Functions -
+    
+    //convert a request to a URL
+    private func convertRequestToURL(with request: Request) throws -> URL {
+        guard let _urlComponent = URLComponents(string: request.path) else {
+            throw DownloadError.invalidURL
+        }
+        var urlComponent = _urlComponent
+        
+        //add url params if we had one
+        if let parameters = request.params {
+            var items = [URLQueryItem]()
+            for (key, value) in parameters {
+                items.append(URLQueryItem(name: key, value: value as? String))
             }
-            }.resume()
+            urlComponent.queryItems = items
+        }
+        guard let url = urlComponent.url else {
+            throw DownloadError.invalidURL
+        }
+        return url
     }
-    func GetRequest(with url: URL, completionHandler: @escaping (_ response: [Image]?) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, res, error) in
-            if error == nil, let unrwappedData = data {
-                let decoder = JSONDecoder()
-                do {
-                    let images = try decoder.decode([Image].self, from: unrwappedData)
-                    DispatchQueue.main.async {
-                        completionHandler(images)
-                    }
-                } catch {
-                    DispatchQueue.main.async {
-                        completionHandler(nil)
-                    }
-                }
-            } else {
+    
+    private func checkDataCache(withKey urlKey: NSURL) -> Data? {
+        return dataCache.object(forKey: urlKey)?.data
+    }
+    
+    public func request(with request: Request, onSuccess: @escaping onSuccessHandler, onError: @escaping onErrorHandler) {
+        do {
+            let url = try convertRequestToURL(with: request)
+            
+            //urlKey is NSURL for checking NSCache
+            let urlKey = url as NSURL
+            
+            //check cache
+            if let data = checkDataCache(withKey: urlKey) {
                 DispatchQueue.main.async {
-                    completionHandler(nil)
+                    onSuccess(data)
                 }
+                return
             }
-            }.resume()
+            
+            //make a datatask request
+            URLSession.shared.dataTask(with: url) { (data, res, error) in
+                DispatchQueue.main.async {
+                    if error == nil, let unrwappedData = data {
+                        if let response = res as? HTTPURLResponse {
+                            switch response.validate() {
+                            case .success:
+                                self.dataCache.setObject(DiscardableData(data: unrwappedData), forKey: urlKey)
+                                onSuccess(unrwappedData)
+                                
+                            case .failure(let resError):
+                                onError(resError)
+                            }
+                        }
+                    } else {
+                        onError(error!)
+                    }
+                }
+                }.resume()
+        } catch {
+            onError(error)
+        }
     }
 }
