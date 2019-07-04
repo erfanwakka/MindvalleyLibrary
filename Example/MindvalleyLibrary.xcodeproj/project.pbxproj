@@ -26,6 +26,7 @@
 		B3C03BEB22CE0D98002CE6B3 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD722CE0D98002CE6B3 /* BottomView.swift */; };
 		B3C03BEC22CE0D98002CE6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C03BD822CE0D98002CE6B3 /* Main.storyboard */; };
 		B3C03BED22CE0D98002CE6B3 /* MainViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BDB22CE0D98002CE6B3 /* MainViewService.swift */; };
+		B3C03BEF22CE2316002CE6B3 /* MindvalleyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C03BEE22CE2316002CE6B3 /* MindvalleyLibrary.framework */; };
 		F54AA947DE5F27D5CF15A72E /* Pods_MindvalleyLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		B3C03BD722CE0D98002CE6B3 /* BottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B3C03BD922CE0D98002CE6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C03BDB22CE0D98002CE6B3 /* MainViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewService.swift; sourceTree = "<group>"; };
+		B3C03BEE22CE2316002CE6B3 /* MindvalleyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MindvalleyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9E65A1E158C885F76E7DD7 /* Pods-MindvalleyLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2B2718DF521E2B7FF611A0 /* Pods-MindvalleyLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C03BEF22CE2316002CE6B3 /* MindvalleyLibrary.framework in Frameworks */,
 				A74FA20F1955DD9606D02CD6 /* Pods_MindvalleyLibrary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +166,7 @@
 		9252E7B23F37544415E0854E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3C03BEE22CE2316002CE6B3 /* MindvalleyLibrary.framework */,
 				9248C71CB7EFF78B4DD32B81 /* Pods_MindvalleyLibrary_Example.framework */,
 				EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */,
 			);
