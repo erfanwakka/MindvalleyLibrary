@@ -124,7 +124,7 @@
 		2774B822CD91729F098C4D8B206EC750 /* MindvalleyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				B3C03BA422CE0D48002CE6B3 /* Classes */,
+				B3C03BA422CE0D48002CE6B3 /* Some */,
 				18EE4162341E46ACF4FE569E09B8A185 /* Pod */,
 				6950D55534BC55A1DCA1EDD6C0AE7DC6 /* Support Files */,
 			);
@@ -181,7 +181,7 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B3C03BA422CE0D48002CE6B3 /* Classes */ = {
+		B3C03BA422CE0D48002CE6B3 /* Some */ = {
 			isa = PBXGroup;
 			children = (
 				B3C03BF422CE2F5E002CE6B3 /* DiscardableData.swift */,
@@ -192,7 +192,7 @@
 				B3C03BF322CE2F5E002CE6B3 /* Request.swift */,
 				B3C03BF522CE2F5E002CE6B3 /* RequestProtocol.swift */,
 			);
-			path = Classes;
+			path = Some;
 			sourceTree = "<group>";
 		};
 		CEA133B0FD496603EEBB4862D2FCAA60 /* Targets Support Files */ = {

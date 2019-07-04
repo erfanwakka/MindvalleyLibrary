@@ -30,7 +30,7 @@ With this library you can download and load any source file easily.It also use c
 
   s.ios.deployment_target = '10.0'
    s.swift_version = '4.0'
-  s.source_files = 'MindvalleyLibrary/Classes/**/*'
+  s.source_files = 'MindvalleyLibrary/Some/**/*'
   
   # s.resource_bundles = {
   #   'MindvalleyLibrary' => ['MindvalleyLibrary/Assets/*.png']
