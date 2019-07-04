@@ -53,7 +53,7 @@ class PinboardVC: UIViewController {
     }
     private func getDatas() {
         let req = Request(path: URLs.base, headers: nil, params: nil)
-        MainViewService.shared.executeRequest(dataRequest: req, onSuccess: { (images) in
+        _ = MainViewService.shared.executeRequest(dataRequest: req, onSuccess: { (images) in
             self.refreshControl.endRefreshing()
             self.images = images
         }) { (error) in
@@ -98,7 +98,7 @@ extension PinboardVC: UICollectionViewDataSource {
         //one of the urls was not founded (404 error)
         let req = Request(path: (images![indexPath.item].urls?.regular)!, headers: nil, params: nil)
         let thumbReq = Request(path: (images![indexPath.item].urls?.thumb)!, headers: nil, params: nil)
-        cell.image.set(withRequest: req, placeholder: #imageLiteral(resourceName: "mindvalley"), thumbnailRequest: thumbReq)
+        let _ = cell.image.set(withRequest: req, placeholder: #imageLiteral(resourceName: "mindvalley"), thumbnailRequest: thumbReq)
         return cell
     }
 }
