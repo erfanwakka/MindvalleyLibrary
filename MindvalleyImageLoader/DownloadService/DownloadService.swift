@@ -88,9 +88,43 @@ public class DownloadService: Network {
                         onError(error!)
                     }
                 }
-                }.resume()
+            }
+            task.resume()
+            return task
         } catch {
             onError(error)
+            return nil
+        }
+    }
+    
+    public func downloadTask(with request: Request, onSuccess: @escaping onSuccessHandler, onError: @escaping onErrorHandler) -> URLSessionDownloadTask? {
+        do {
+            let url = try convertRequestToURL(with: request)
+            
+            //urlKey is NSURL for checking NSCache
+            let urlKey = url as NSURL
+            
+            //check cache
+            if let data = checkDataCache(withKey: urlKey) {
+                DispatchQueue.main.async {
+                    onSuccess(data)
+                }
+                return nil
+            }
+            
+            //make a datatask request
+            let task = URLSession.shared.downloadTask(with: url) { (localURL, responseURL, error) in
+                if localURL != nil {
+                    if let string = try? String(contentsOf: localURL!) {
+                        print(string)
+                    }
+                }
+            }
+            task.resume()
+            return task
+        } catch {
+            onError(error)
+            return nil
         }
     }
 }
