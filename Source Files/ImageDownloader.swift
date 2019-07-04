@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
     
     func set(withRequest request: Request, placeholder: UIImage?, thumbnailRequest thumbnailReq: Request?) -> URLSessionDataTask? {
         

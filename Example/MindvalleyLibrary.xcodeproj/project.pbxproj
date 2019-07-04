@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A74FA20F1955DD9606D02CD6 /* Pods_MindvalleyLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9248C71CB7EFF78B4DD32B81 /* Pods_MindvalleyLibrary_Example.framework */; };
+		B3C03BDC22CE0D98002CE6B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BC222CE0D98002CE6B3 /* Constants.swift */; };
+		B3C03BDF22CE0D98002CE6B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BC622CE0D98002CE6B3 /* AppDelegate.swift */; };
+		B3C03BE122CE0D98002CE6B3 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BC822CE0D98002CE6B3 /* URLs.swift */; };
+		B3C03BE222CE0D98002CE6B3 /* PinboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BCB22CE0D98002CE6B3 /* PinboardVC.swift */; };
+		B3C03BE322CE0D98002CE6B3 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BCD22CE0D98002CE6B3 /* Links.swift */; };
+		B3C03BE422CE0D98002CE6B3 /* ImageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BCE22CE0D98002CE6B3 /* ImageProfile.swift */; };
+		B3C03BE522CE0D98002CE6B3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BCF22CE0D98002CE6B3 /* Image.swift */; };
+		B3C03BE622CE0D98002CE6B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD022CE0D98002CE6B3 /* User.swift */; };
+		B3C03BE722CE0D98002CE6B3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD122CE0D98002CE6B3 /* Category.swift */; };
+		B3C03BE822CE0D98002CE6B3 /* UrlProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD222CE0D98002CE6B3 /* UrlProfile.swift */; };
+		B3C03BE922CE0D98002CE6B3 /* RegularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD522CE0D98002CE6B3 /* RegularCell.swift */; };
+		B3C03BEA22CE0D98002CE6B3 /* RegularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C03BD622CE0D98002CE6B3 /* RegularCell.xib */; };
+		B3C03BEB22CE0D98002CE6B3 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BD722CE0D98002CE6B3 /* BottomView.swift */; };
+		B3C03BEC22CE0D98002CE6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C03BD822CE0D98002CE6B3 /* Main.storyboard */; };
+		B3C03BED22CE0D98002CE6B3 /* MainViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BDB22CE0D98002CE6B3 /* MainViewService.swift */; };
 		F54AA947DE5F27D5CF15A72E /* Pods_MindvalleyLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +44,6 @@
 		1EDA8C918C0C141DACD7DAF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MindvalleyLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MindvalleyLibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindvalleyLibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,21 @@
 		9248C71CB7EFF78B4DD32B81 /* Pods_MindvalleyLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B88FE7F3E1234666776849A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC109BD23192ED53441048D1 /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Tests/Pods-MindvalleyLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C03BC222CE0D98002CE6B3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3C03BC622CE0D98002CE6B3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3C03BC822CE0D98002CE6B3 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		B3C03BCB22CE0D98002CE6B3 /* PinboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinboardVC.swift; sourceTree = "<group>"; };
+		B3C03BCD22CE0D98002CE6B3 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		B3C03BCE22CE0D98002CE6B3 /* ImageProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProfile.swift; sourceTree = "<group>"; };
+		B3C03BCF22CE0D98002CE6B3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B3C03BD022CE0D98002CE6B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3C03BD122CE0D98002CE6B3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B3C03BD222CE0D98002CE6B3 /* UrlProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlProfile.swift; sourceTree = "<group>"; };
+		B3C03BD522CE0D98002CE6B3 /* RegularCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularCell.swift; sourceTree = "<group>"; };
+		B3C03BD622CE0D98002CE6B3 /* RegularCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegularCell.xib; sourceTree = "<group>"; };
+		B3C03BD722CE0D98002CE6B3 /* BottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		B3C03BD922CE0D98002CE6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3C03BDB22CE0D98002CE6B3 /* MainViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewService.swift; sourceTree = "<group>"; };
 		BF9E65A1E158C885F76E7DD7 /* Pods-MindvalleyLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2B2718DF521E2B7FF611A0 /* Pods-MindvalleyLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +117,8 @@
 		607FACD21AFB9204008FA782 /* Example for MindvalleyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				B3C03BC922CE0D98002CE6B3 /* MainView */,
+				B3C03BC122CE0D98002CE6B3 /* Others */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for MindvalleyLibrary";
@@ -146,6 +167,77 @@
 				EBDBBE636BD0D08980A75E93 /* Pods_MindvalleyLibrary_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3C03BC122CE0D98002CE6B3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BC222CE0D98002CE6B3 /* Constants.swift */,
+				B3C03BC622CE0D98002CE6B3 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				B3C03BC822CE0D98002CE6B3 /* URLs.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B3C03BC922CE0D98002CE6B3 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BCA22CE0D98002CE6B3 /* Controller */,
+				B3C03BCC22CE0D98002CE6B3 /* Model */,
+				B3C03BD322CE0D98002CE6B3 /* View */,
+				B3C03BDA22CE0D98002CE6B3 /* Service */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B3C03BCA22CE0D98002CE6B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BCB22CE0D98002CE6B3 /* PinboardVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C03BCC22CE0D98002CE6B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BCD22CE0D98002CE6B3 /* Links.swift */,
+				B3C03BCE22CE0D98002CE6B3 /* ImageProfile.swift */,
+				B3C03BCF22CE0D98002CE6B3 /* Image.swift */,
+				B3C03BD022CE0D98002CE6B3 /* User.swift */,
+				B3C03BD122CE0D98002CE6B3 /* Category.swift */,
+				B3C03BD222CE0D98002CE6B3 /* UrlProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C03BD322CE0D98002CE6B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BD422CE0D98002CE6B3 /* CustomCells */,
+				B3C03BD822CE0D98002CE6B3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3C03BD422CE0D98002CE6B3 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BD522CE0D98002CE6B3 /* RegularCell.swift */,
+				B3C03BD622CE0D98002CE6B3 /* RegularCell.xib */,
+				B3C03BD722CE0D98002CE6B3 /* BottomView.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B3C03BDA22CE0D98002CE6B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BDB22CE0D98002CE6B3 /* MainViewService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BA369157DBF7D001BAC83577 /* Pods */ = {
@@ -212,6 +304,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 54HDDP27D9;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -245,8 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				B3C03BEA22CE0D98002CE6B3 /* RegularCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				B3C03BEC22CE0D98002CE6B3 /* Main.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,8 +428,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B3C03BE522CE0D98002CE6B3 /* Image.swift in Sources */,
+				B3C03BE822CE0D98002CE6B3 /* UrlProfile.swift in Sources */,
+				B3C03BE922CE0D98002CE6B3 /* RegularCell.swift in Sources */,
+				B3C03BEB22CE0D98002CE6B3 /* BottomView.swift in Sources */,
+				B3C03BE322CE0D98002CE6B3 /* Links.swift in Sources */,
+				B3C03BE422CE0D98002CE6B3 /* ImageProfile.swift in Sources */,
+				B3C03BDF22CE0D98002CE6B3 /* AppDelegate.swift in Sources */,
+				B3C03BED22CE0D98002CE6B3 /* MainViewService.swift in Sources */,
+				B3C03BE622CE0D98002CE6B3 /* User.swift in Sources */,
+				B3C03BE722CE0D98002CE6B3 /* Category.swift in Sources */,
+				B3C03BE122CE0D98002CE6B3 /* URLs.swift in Sources */,
+				B3C03BDC22CE0D98002CE6B3 /* Constants.swift in Sources */,
+				B3C03BE222CE0D98002CE6B3 /* PinboardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,20 +463,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B3C03BD822CE0D98002CE6B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3C03BD922CE0D98002CE6B3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -481,13 +586,15 @@
 			baseConfigurationReference = BF9E65A1E158C885F76E7DD7 /* Pods-MindvalleyLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54HDDP27D9;
 				INFOPLIST_FILE = MindvalleyLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -496,13 +603,15 @@
 			baseConfigurationReference = DE2B2718DF521E2B7FF611A0 /* Pods-MindvalleyLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 54HDDP27D9;
 				INFOPLIST_FILE = MindvalleyLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -510,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC109BD23192ED53441048D1 /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -532,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FD9DAAEC24A383FC0011B80 /* Pods-MindvalleyLibrary_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

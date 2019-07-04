@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import MindvalleyLibrary
 
 class MainViewService: RequestProtocol {
     

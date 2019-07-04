@@ -9,11 +9,31 @@
 /* Begin PBXBuildFile section */
 		1FA016251F137EFF74604446E8B6A59C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		29180ECAD60AB8B726945EEF2C44C2C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		36E4307AA49903D3BB9F86C9C4FCF9C1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77962174252171B8EF60CAFF3C781F /* ReplaceMe.swift */; };
 		3E34DA4E4478132A22AA7E6B7C12E618 /* Pods-MindvalleyLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB008FF6E1ED62AAD050AC8494CE4BC4 /* Pods-MindvalleyLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C5C51D78B2ACC23F6FB5728B33E1FEB /* Pods-MindvalleyLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B878CB0E50E71795DB5339C7E0595C5A /* Pods-MindvalleyLibrary_Example-dummy.m */; };
 		749472410ED48039B54DD515AF628DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		9E9300152D0115F07C616B3060827E59 /* MindvalleyLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D47B0E0C5F1FC85BF3C9C5BA5296E /* MindvalleyLibrary-dummy.m */; };
+		B3C03BAC22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
+		B3C03BAD22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
+		B3C03BAE22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
+		B3C03BAF22CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
+		B3C03BB022CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
+		B3C03BB122CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
+		B3C03BB222CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
+		B3C03BB322CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
+		B3C03BB422CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
+		B3C03BB522CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
+		B3C03BB622CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
+		B3C03BB722CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
+		B3C03BB822CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
+		B3C03BB922CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
+		B3C03BBA22CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
+		B3C03BBB22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
+		B3C03BBC22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
+		B3C03BBD22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
+		B3C03BBE22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
+		B3C03BBF22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
+		B3C03BC022CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
 		C6CAC6859C00FAFED4593A4509775257 /* Pods-MindvalleyLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3F4A0DB51E32F526B71D0204F63DCB /* Pods-MindvalleyLibrary_Tests-dummy.m */; };
 		E199C00C422D498BBD28B8152B9B6099 /* Pods-MindvalleyLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3D80994E7663A0BF937B481FA81645 /* Pods-MindvalleyLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAC32D1748A8C52AE2CE618382C46F41 /* MindvalleyLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5032ACDE6CF1B7C25042EFE6661AC7D5 /* MindvalleyLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,25 +59,31 @@
 /* Begin PBXFileReference section */
 		01B7F0C1C3E774DCD9536365559FF86C /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindvalleyLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1022BB8B7967F4C3317020B1E434786F /* Pods-MindvalleyLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MindvalleyLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F6099CE4C3F289528ED09BF5F4CB504 /* MindvalleyLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MindvalleyLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F6099CE4C3F289528ED09BF5F4CB504 /* MindvalleyLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MindvalleyLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		223E90F602C599FAC3FD9A1BFB678B58 /* MindvalleyLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MindvalleyLibrary.xcconfig; sourceTree = "<group>"; };
 		2C9663E9CFDE38C8846F62C002268EBB /* Pods-MindvalleyLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindvalleyLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3496F43B35C8A57140A922D5CF1F80CC /* Pods-MindvalleyLibrary_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindvalleyLibrary_Tests-Info.plist"; sourceTree = "<group>"; };
-		426DD72A36E20521F00AB1078ADADFBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4F77962174252171B8EF60CAFF3C781F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MindvalleyLibrary/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		426DD72A36E20521F00AB1078ADADFBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5032ACDE6CF1B7C25042EFE6661AC7D5 /* MindvalleyLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MindvalleyLibrary-umbrella.h"; sourceTree = "<group>"; };
-		556C4E46148585DBF527CDC670BB37B1 /* Pods_MindvalleyLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindvalleyLibrary_Example.framework; path = "Pods-MindvalleyLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556C4E46148585DBF527CDC670BB37B1 /* Pods_MindvalleyLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAC9B91AB3452479E875D8C7D3FD6BE /* Pods-MindvalleyLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindvalleyLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5F3F4A0DB51E32F526B71D0204F63DCB /* Pods-MindvalleyLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindvalleyLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
 		7CD81868122BDEDF73F4689DBC00CA65 /* Pods-MindvalleyLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindvalleyLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D45500EF2A7071FB035A7D97FA60CC7 /* MindvalleyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MindvalleyLibrary.framework; path = MindvalleyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93868DB490CCA371E103F221D2F3D2F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8D45500EF2A7071FB035A7D97FA60CC7 /* MindvalleyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MindvalleyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93868DB490CCA371E103F221D2F3D2F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C3D80994E7663A0BF937B481FA81645 /* Pods-MindvalleyLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindvalleyLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F0D47B0E0C5F1FC85BF3C9C5BA5296E /* MindvalleyLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MindvalleyLibrary-dummy.m"; sourceTree = "<group>"; };
 		A0B1145608BC286D0881022605FF8DCA /* MindvalleyLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MindvalleyLibrary.modulemap; sourceTree = "<group>"; };
 		AB008FF6E1ED62AAD050AC8494CE4BC4 /* Pods-MindvalleyLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindvalleyLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B763D79AA8CECC80C3E81106869B7102 /* Pods_MindvalleyLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindvalleyLibrary_Tests.framework; path = "Pods-MindvalleyLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C03BA522CE0D66002CE6B3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardableData.swift; sourceTree = "<group>"; };
+		B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		B3C03BA922CE0D66002CE6B3 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
+		B763D79AA8CECC80C3E81106869B7102 /* Pods_MindvalleyLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B878CB0E50E71795DB5339C7E0595C5A /* Pods-MindvalleyLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindvalleyLibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CB92632D3CB05AD0649D68F2D7736BD6 /* MindvalleyLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MindvalleyLibrary-prefix.pch"; sourceTree = "<group>"; };
@@ -112,7 +138,7 @@
 		2774B822CD91729F098C4D8B206EC750 /* MindvalleyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				4F77962174252171B8EF60CAFF3C781F /* ReplaceMe.swift */,
+				B3C03BA422CE0D48002CE6B3 /* Source Files */,
 				18EE4162341E46ACF4FE569E09B8A185 /* Pod */,
 				6950D55534BC55A1DCA1EDD6C0AE7DC6 /* Support Files */,
 			);
@@ -167,6 +193,20 @@
 				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3C03BA422CE0D48002CE6B3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */,
+				B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */,
+				B3C03BA922CE0D66002CE6B3 /* Enums.swift */,
+				B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */,
+				B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */,
+				B3C03BA522CE0D66002CE6B3 /* Request.swift */,
+				B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */,
+			);
+			path = "Source Files";
 			sourceTree = "<group>";
 		};
 		CEA133B0FD496603EEBB4862D2FCAA60 /* Targets Support Files */ = {
@@ -315,6 +355,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					3A8594AC4FD44CFCC2799C5372BB7217 = {
+						LastSwiftMigration = 1010;
+					};
+					40C6FDBE1D70A5C17757AAFA08963C78 = {
+						LastSwiftMigration = 1010;
+					};
+					62F38D98E01B5EF1C1EEC2BC4D2D318A = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -364,8 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C03BBE22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
+				B3C03BB222CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
 				9E9300152D0115F07C616B3060827E59 /* MindvalleyLibrary-dummy.m in Sources */,
-				36E4307AA49903D3BB9F86C9C4FCF9C1 /* ReplaceMe.swift in Sources */,
+				B3C03BBB22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
+				B3C03BAC22CE0D66002CE6B3 /* Request.swift in Sources */,
+				B3C03BAF22CE0D66002CE6B3 /* DownloadService.swift in Sources */,
+				B3C03BB822CE0D66002CE6B3 /* Enums.swift in Sources */,
+				B3C03BB522CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C03BBF22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
+				B3C03BB322CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
 				5C5C51D78B2ACC23F6FB5728B33E1FEB /* Pods-MindvalleyLibrary_Example-dummy.m in Sources */,
+				B3C03BBC22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
+				B3C03BAD22CE0D66002CE6B3 /* Request.swift in Sources */,
+				B3C03BB022CE0D66002CE6B3 /* DownloadService.swift in Sources */,
+				B3C03BB922CE0D66002CE6B3 /* Enums.swift in Sources */,
+				B3C03BB622CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +445,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C03BC022CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
+				B3C03BB422CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
 				C6CAC6859C00FAFED4593A4509775257 /* Pods-MindvalleyLibrary_Tests-dummy.m in Sources */,
+				B3C03BBD22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
+				B3C03BAE22CE0D66002CE6B3 /* Request.swift in Sources */,
+				B3C03BB122CE0D66002CE6B3 /* DownloadService.swift in Sources */,
+				B3C03BBA22CE0D66002CE6B3 /* Enums.swift in Sources */,
+				B3C03BB722CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +479,7 @@
 			baseConfigurationReference = 2C9663E9CFDE38C8846F62C002268EBB /* Pods-MindvalleyLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -430,6 +502,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -441,6 +515,7 @@
 			baseConfigurationReference = 01B7F0C1C3E774DCD9536365559FF86C /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -463,6 +538,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -474,6 +551,7 @@
 			baseConfigurationReference = 5AAC9B91AB3452479E875D8C7D3FD6BE /* Pods-MindvalleyLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -496,6 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -508,6 +587,7 @@
 			baseConfigurationReference = D15B499FE2D86BAD4A643686D06ECAC2 /* Pods-MindvalleyLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -530,6 +610,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -541,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 223E90F602C599FAC3FD9A1BFB678B58 /* MindvalleyLibrary.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -573,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 223E90F602C599FAC3FD9A1BFB678B58 /* MindvalleyLibrary.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -593,6 +676,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -717,8 +801,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

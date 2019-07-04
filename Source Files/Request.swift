@@ -13,4 +13,10 @@ public struct Request {
     public let path: String
     public let headers: [String: String]?
     public let params: [String: Any?]?
+    
+    public init(path: String, headers: [String: String]?, params: [String: Any?]?) {
+        self.path = path
+        self.headers = headers
+        self.params = params
+    }
 }

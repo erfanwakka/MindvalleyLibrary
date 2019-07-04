@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MindvalleyLibrary
 
 class PinboardVC: UIViewController {
     
@@ -98,6 +99,7 @@ extension PinboardVC: UICollectionViewDataSource {
         //one of the urls was not founded (404 error)
         let req = Request(path: (images![indexPath.item].urls?.regular)!, headers: nil, params: nil)
         let thumbReq = Request(path: (images![indexPath.item].urls?.thumb)!, headers: nil, params: nil)
+        cell.image.image = nil
         let _ = cell.image.set(withRequest: req, placeholder: #imageLiteral(resourceName: "mindvalley"), thumbnailRequest: thumbReq)
         return cell
     }
