@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MindvalleyLibrary'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'This is a library for Mindvalley project.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ With this library you can download and load any source file easily.It also use c
 
   s.ios.deployment_target = '10.0'
    s.swift_version = '4.0'
-  s.source_files = 'MindvalleyLibrary/Classes/**/*'
+  s.source_files = 'MindvalleyLibrary/Classes/**/*.{h,m,c}'
   
   # s.resource_bundles = {
   #   'MindvalleyLibrary' => ['MindvalleyLibrary/Assets/*.png']
