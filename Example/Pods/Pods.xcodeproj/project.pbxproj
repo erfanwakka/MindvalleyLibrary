@@ -198,6 +198,14 @@
 		B3C03BA422CE0D48002CE6B3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B3C03BF022CE241D002CE6B3 /* Source */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3C03BF022CE241D002CE6B3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */,
 				B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */,
 				B3C03BA922CE0D66002CE6B3 /* Enums.swift */,
@@ -206,7 +214,7 @@
 				B3C03BA522CE0D66002CE6B3 /* Request.swift */,
 				B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */,
 			);
-			path = Classes;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		CEA133B0FD496603EEBB4862D2FCAA60 /* Targets Support Files */ = {
