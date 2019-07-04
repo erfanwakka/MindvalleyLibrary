@@ -8,15 +8,12 @@
 
 import Foundation
 
-public enum DownloadError: Error {
-    case noData
-    case invalidURL
-}
 public enum ValidationResult {
     case success
     case failure(Error)
 }
 public enum libraryError: Error {
+    case invalidURL
     case noNetworkConnectivity
     case connectionTimeout
     case unAuthorized
@@ -45,6 +42,8 @@ public enum libraryError: Error {
             return "forbidden"
         case .maintenance:
             return "maintenance"
+        case .invalidURL:
+            return "invalidURL"
         }
     }
 }
