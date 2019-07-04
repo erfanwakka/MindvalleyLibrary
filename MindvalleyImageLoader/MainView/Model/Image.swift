@@ -18,7 +18,7 @@ struct Image: Decodable {
     var likes: Int?
     var liked_by_user: Bool?
     var user: user
-    var current_user_collections: [String] // all of the arrays was empty so I assume it is array of string
+    var current_user_collections: [String] // all of the arrays was empty so I assume it is an array of string
     var urls: UrlProfile?
     var categories: [Category]
     var links: Links
