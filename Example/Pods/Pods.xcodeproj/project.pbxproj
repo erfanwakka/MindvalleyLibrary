@@ -13,27 +13,13 @@
 		5C5C51D78B2ACC23F6FB5728B33E1FEB /* Pods-MindvalleyLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B878CB0E50E71795DB5339C7E0595C5A /* Pods-MindvalleyLibrary_Example-dummy.m */; };
 		749472410ED48039B54DD515AF628DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		9E9300152D0115F07C616B3060827E59 /* MindvalleyLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D47B0E0C5F1FC85BF3C9C5BA5296E /* MindvalleyLibrary-dummy.m */; };
-		B3C03BAC22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
-		B3C03BAD22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
-		B3C03BAE22CE0D66002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA522CE0D66002CE6B3 /* Request.swift */; };
-		B3C03BAF22CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
-		B3C03BB022CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
-		B3C03BB122CE0D66002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */; };
-		B3C03BB222CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
-		B3C03BB322CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
-		B3C03BB422CE0D66002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */; };
-		B3C03BB522CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
-		B3C03BB622CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
-		B3C03BB722CE0D66002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */; };
-		B3C03BB822CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
-		B3C03BB922CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
-		B3C03BBA22CE0D66002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BA922CE0D66002CE6B3 /* Enums.swift */; };
-		B3C03BBB22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
-		B3C03BBC22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
-		B3C03BBD22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */; };
-		B3C03BBE22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
-		B3C03BBF22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
-		B3C03BC022CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */; };
+		B3C03BF822CE2F5E002CE6B3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF122CE2F5E002CE6B3 /* DownloadService.swift */; };
+		B3C03BF922CE2F5E002CE6B3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF222CE2F5E002CE6B3 /* ImageDownloader.swift */; };
+		B3C03BFA22CE2F5E002CE6B3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF322CE2F5E002CE6B3 /* Request.swift */; };
+		B3C03BFB22CE2F5E002CE6B3 /* DiscardableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF422CE2F5E002CE6B3 /* DiscardableData.swift */; };
+		B3C03BFC22CE2F5E002CE6B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF522CE2F5E002CE6B3 /* RequestProtocol.swift */; };
+		B3C03BFD22CE2F5E002CE6B3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF622CE2F5E002CE6B3 /* Enums.swift */; };
+		B3C03BFE22CE2F5E002CE6B3 /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C03BF722CE2F5E002CE6B3 /* HTTPURLResponseExtension.swift */; };
 		C6CAC6859C00FAFED4593A4509775257 /* Pods-MindvalleyLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3F4A0DB51E32F526B71D0204F63DCB /* Pods-MindvalleyLibrary_Tests-dummy.m */; };
 		E199C00C422D498BBD28B8152B9B6099 /* Pods-MindvalleyLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3D80994E7663A0BF937B481FA81645 /* Pods-MindvalleyLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAC32D1748A8C52AE2CE618382C46F41 /* MindvalleyLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5032ACDE6CF1B7C25042EFE6661AC7D5 /* MindvalleyLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,13 +62,13 @@
 		9F0D47B0E0C5F1FC85BF3C9C5BA5296E /* MindvalleyLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MindvalleyLibrary-dummy.m"; sourceTree = "<group>"; };
 		A0B1145608BC286D0881022605FF8DCA /* MindvalleyLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MindvalleyLibrary.modulemap; sourceTree = "<group>"; };
 		AB008FF6E1ED62AAD050AC8494CE4BC4 /* Pods-MindvalleyLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindvalleyLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B3C03BA522CE0D66002CE6B3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
-		B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardableData.swift; sourceTree = "<group>"; };
-		B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
-		B3C03BA922CE0D66002CE6B3 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
+		B3C03BF122CE2F5E002CE6B3 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		B3C03BF222CE2F5E002CE6B3 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		B3C03BF322CE2F5E002CE6B3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B3C03BF422CE2F5E002CE6B3 /* DiscardableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardableData.swift; sourceTree = "<group>"; };
+		B3C03BF522CE2F5E002CE6B3 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		B3C03BF622CE2F5E002CE6B3 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B3C03BF722CE2F5E002CE6B3 /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
 		B763D79AA8CECC80C3E81106869B7102 /* Pods_MindvalleyLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B878CB0E50E71795DB5339C7E0595C5A /* Pods-MindvalleyLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindvalleyLibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -198,23 +184,15 @@
 		B3C03BA422CE0D48002CE6B3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B3C03BF022CE241D002CE6B3 /* Source */,
+				B3C03BF422CE2F5E002CE6B3 /* DiscardableData.swift */,
+				B3C03BF122CE2F5E002CE6B3 /* DownloadService.swift */,
+				B3C03BF622CE2F5E002CE6B3 /* Enums.swift */,
+				B3C03BF722CE2F5E002CE6B3 /* HTTPURLResponseExtension.swift */,
+				B3C03BF222CE2F5E002CE6B3 /* ImageDownloader.swift */,
+				B3C03BF322CE2F5E002CE6B3 /* Request.swift */,
+				B3C03BF522CE2F5E002CE6B3 /* RequestProtocol.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		B3C03BF022CE241D002CE6B3 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B3C03BA722CE0D66002CE6B3 /* DiscardableData.swift */,
-				B3C03BA622CE0D66002CE6B3 /* DownloadService.swift */,
-				B3C03BA922CE0D66002CE6B3 /* Enums.swift */,
-				B3C03BAB22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift */,
-				B3C03BAA22CE0D66002CE6B3 /* ImageDownloader.swift */,
-				B3C03BA522CE0D66002CE6B3 /* Request.swift */,
-				B3C03BA822CE0D66002CE6B3 /* RequestProtocol.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		CEA133B0FD496603EEBB4862D2FCAA60 /* Targets Support Files */ = {
@@ -423,14 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C03BBE22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
-				B3C03BB222CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
+				B3C03BFE22CE2F5E002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
 				9E9300152D0115F07C616B3060827E59 /* MindvalleyLibrary-dummy.m in Sources */,
-				B3C03BBB22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
-				B3C03BAC22CE0D66002CE6B3 /* Request.swift in Sources */,
-				B3C03BAF22CE0D66002CE6B3 /* DownloadService.swift in Sources */,
-				B3C03BB822CE0D66002CE6B3 /* Enums.swift in Sources */,
-				B3C03BB522CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
+				B3C03BFB22CE2F5E002CE6B3 /* DiscardableData.swift in Sources */,
+				B3C03BFA22CE2F5E002CE6B3 /* Request.swift in Sources */,
+				B3C03BFC22CE2F5E002CE6B3 /* RequestProtocol.swift in Sources */,
+				B3C03BFD22CE2F5E002CE6B3 /* Enums.swift in Sources */,
+				B3C03BF922CE2F5E002CE6B3 /* ImageDownloader.swift in Sources */,
+				B3C03BF822CE2F5E002CE6B3 /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,14 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C03BBF22CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
-				B3C03BB322CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
 				5C5C51D78B2ACC23F6FB5728B33E1FEB /* Pods-MindvalleyLibrary_Example-dummy.m in Sources */,
-				B3C03BBC22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
-				B3C03BAD22CE0D66002CE6B3 /* Request.swift in Sources */,
-				B3C03BB022CE0D66002CE6B3 /* DownloadService.swift in Sources */,
-				B3C03BB922CE0D66002CE6B3 /* Enums.swift in Sources */,
-				B3C03BB622CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,14 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C03BC022CE0D66002CE6B3 /* HTTPURLResponseExtension.swift in Sources */,
-				B3C03BB422CE0D66002CE6B3 /* DiscardableData.swift in Sources */,
 				C6CAC6859C00FAFED4593A4509775257 /* Pods-MindvalleyLibrary_Tests-dummy.m in Sources */,
-				B3C03BBD22CE0D66002CE6B3 /* ImageDownloader.swift in Sources */,
-				B3C03BAE22CE0D66002CE6B3 /* Request.swift in Sources */,
-				B3C03BB122CE0D66002CE6B3 /* DownloadService.swift in Sources */,
-				B3C03BBA22CE0D66002CE6B3 /* Enums.swift in Sources */,
-				B3C03BB722CE0D66002CE6B3 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
