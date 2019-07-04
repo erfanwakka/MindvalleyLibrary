@@ -25,10 +25,10 @@ With this library you can download and load any source file easily.It also use c
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'erfan' => 'andesta.erfan@gmail.com' }
-  s.source           = { :git => 'https://github.com/erfanwakka/MindvalleyLibrary.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/erfanwakka/MindvalleyLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
    s.swift_version = '4.0'
   s.source_files = 'MindvalleyLibrary/Classes/**/*'
   
