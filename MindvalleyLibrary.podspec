@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MindvalleyLibrary'
-  s.version          = '1.4.0'
+  s.version          = '1.5.0'
   s.summary          = 'This is a library for Mindvalley project.'
 
 # This description is used to generate tags and improve search results.
