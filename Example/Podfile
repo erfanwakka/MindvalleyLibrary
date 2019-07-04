@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MindvalleyLibrary_Example' do
+  pod 'MindvalleyLibrary', :path => '../'
+
+  target 'MindvalleyLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
