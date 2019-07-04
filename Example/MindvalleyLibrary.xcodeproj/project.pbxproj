@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E56C68C3D8964096D1E24C6 /* MindvalleyLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MindvalleyLibrary.podspec; path = ../MindvalleyLibrary.podspec; sourceTree = "<group>"; };
-		1EDA8C918C0C141DACD7DAF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0E56C68C3D8964096D1E24C6 /* MindvalleyLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MindvalleyLibrary.podspec; path = ../MindvalleyLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1EDA8C918C0C141DACD7DAF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MindvalleyLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6FD9DAAEC24A383FC0011B80 /* Pods-MindvalleyLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Tests/Pods-MindvalleyLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9248C71CB7EFF78B4DD32B81 /* Pods_MindvalleyLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B88FE7F3E1234666776849A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9B88FE7F3E1234666776849A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC109BD23192ED53441048D1 /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Tests/Pods-MindvalleyLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9E65A1E158C885F76E7DD7 /* Pods-MindvalleyLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2B2718DF521E2B7FF611A0 /* Pods-MindvalleyLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-MindvalleyLibrary_Example/Pods-MindvalleyLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				AC109BD23192ED53441048D1 /* Pods-MindvalleyLibrary_Tests.debug.xcconfig */,
 				6FD9DAAEC24A383FC0011B80 /* Pods-MindvalleyLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

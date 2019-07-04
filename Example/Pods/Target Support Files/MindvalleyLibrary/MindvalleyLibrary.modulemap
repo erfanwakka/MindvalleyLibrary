@@ -1,0 +1,6 @@
+framework module MindvalleyLibrary {
+  umbrella header "MindvalleyLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

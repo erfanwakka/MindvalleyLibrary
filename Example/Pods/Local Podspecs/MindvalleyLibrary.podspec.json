@@ -1,0 +1,22 @@
+{
+  "name": "MindvalleyLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of MindvalleyLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/erfan/MindvalleyLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "erfan": "andesta.erfan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/erfan/MindvalleyLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MindvalleyLibrary/Classes/**/*"
+}

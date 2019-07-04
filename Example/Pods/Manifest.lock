@@ -1,0 +1,16 @@
+PODS:
+  - MindvalleyLibrary (0.1.0)
+
+DEPENDENCIES:
+  - MindvalleyLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  MindvalleyLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MindvalleyLibrary: 8faa48f91dcd97cfad762a2e5876da7568b93a42
+
+PODFILE CHECKSUM: d9ea40ec465ac9c50ab98e3894343d1b366f510d
+
+COCOAPODS: 1.6.0.rc.2
