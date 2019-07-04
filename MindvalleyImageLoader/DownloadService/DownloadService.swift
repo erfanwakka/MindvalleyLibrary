@@ -8,8 +8,11 @@
 
 import UIKit
 
+public typealias onSuccessHandler = (Data) -> Void
+public typealias onErrorHandler = (Error) -> Void
+
 public protocol Network {
-    func request(with request: Request, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void)
+    func request(with request: Request, onSuccess: @escaping onSuccessHandler, onError: @escaping onErrorHandler) -> URLSessionDataTask?
 }
 public class DownloadService: Network {
     
@@ -17,11 +20,7 @@ public class DownloadService: Network {
     
     //MARK: - Vars -
     
-    public typealias onSuccessHandler = (Data) -> Void
-    public typealias onErrorHandler = (Error) -> Void
-    
     public static var shared = DownloadService()
-    
     private var dataCache = NSCache<NSURL, DiscardableData>()
     
     //MARK: - Init -
@@ -33,7 +32,7 @@ public class DownloadService: Network {
     //convert a request to a URL
     private func convertRequestToURL(with request: Request) throws -> URL {
         guard let _urlComponent = URLComponents(string: request.path) else {
-            throw DownloadError.invalidURL
+            throw libraryError.invalidURL
         }
         var urlComponent = _urlComponent
         
@@ -46,16 +45,17 @@ public class DownloadService: Network {
             urlComponent.queryItems = items
         }
         guard let url = urlComponent.url else {
-            throw DownloadError.invalidURL
+            throw libraryError.invalidURL
         }
         return url
     }
     
+    //check if we have cached the data
     private func checkDataCache(withKey urlKey: NSURL) -> Data? {
         return dataCache.object(forKey: urlKey)?.data
     }
     
-    public func request(with request: Request, onSuccess: @escaping onSuccessHandler, onError: @escaping onErrorHandler) {
+    public func request(with request: Request, onSuccess: @escaping onSuccessHandler, onError: @escaping onErrorHandler) -> URLSessionDataTask? {
         do {
             let url = try convertRequestToURL(with: request)
             
@@ -67,11 +67,11 @@ public class DownloadService: Network {
                 DispatchQueue.main.async {
                     onSuccess(data)
                 }
-                return
+                return nil
             }
             
             //make a datatask request
-            URLSession.shared.dataTask(with: url) { (data, res, error) in
+            let task = URLSession.shared.dataTask(with: url) { (data, res, error) in
                 DispatchQueue.main.async {
                     if error == nil, let unrwappedData = data {
                         if let response = res as? HTTPURLResponse {

@@ -10,14 +10,14 @@ import UIKit
 
 extension UIImageView {
     
-    func set(withRequest request: Request, placeholder: UIImage?, thumbnailRequest thumbnailReq: Request?) {
+    func set(withRequest request: Request, placeholder: UIImage?, thumbnailRequest thumbnailReq: Request?) -> URLSessionDataTask? {
         
         if image == nil {
             image = placeholder
         }
         
         if thumbnailReq != nil {
-            DownloadService.shared.request(with: thumbnailReq!, onSuccess: { (data) in
+            return DownloadService.shared.request(with: thumbnailReq!, onSuccess: { (data) in
                 if self.image == nil || self.image == placeholder {
                     if let imageData = UIImage(data: data) {
                         self.image = imageData
@@ -28,7 +28,7 @@ extension UIImageView {
             }
         }
         
-        DownloadService.shared.request(with: request, onSuccess: { (data) in
+        return DownloadService.shared.request(with: request, onSuccess: { (data) in
             if let image = UIImage(data: data) {
                 self.image = image
             }
