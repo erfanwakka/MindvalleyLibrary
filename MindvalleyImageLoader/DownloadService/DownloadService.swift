@@ -64,15 +64,12 @@ public class DownloadService: Network {
             
             //check cache
             if let data = checkDataCache(withKey: urlKey) {
-                DispatchQueue.main.async {
                     onSuccess(data)
-                }
                 return nil
             }
             
             //make a datatask request
             let task = URLSession.shared.dataTask(with: url) { (data, res, error) in
-                DispatchQueue.main.async {
                     if error == nil, let unrwappedData = data {
                         if let response = res as? HTTPURLResponse {
                             switch response.validate() {
@@ -86,7 +83,6 @@ public class DownloadService: Network {
                         }
                     } else {
                         onError(error!)
-                    }
                 }
             }
             task.resume()
@@ -106,9 +102,7 @@ public class DownloadService: Network {
             
             //check cache
             if let data = checkDataCache(withKey: urlKey) {
-                DispatchQueue.main.async {
                     onSuccess(data)
-                }
                 return nil
             }
             

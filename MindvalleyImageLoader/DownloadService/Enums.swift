@@ -10,7 +10,7 @@ import Foundation
 
 public enum ValidationResult {
     case success
-    case failure(Error)
+    case failure(error: Error)
 }
 public enum libraryError: Error {
     case invalidURL

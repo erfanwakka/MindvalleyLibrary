@@ -33,7 +33,7 @@ class PinboardVC: UIViewController {
         return refresh
     }()
     
-    var images: [Image]? {
+    var images: [Image] = [] {
         didSet {
             PinboardCollectionView.reloadData()
         }
@@ -43,22 +43,26 @@ class PinboardVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getDatas()
+        getData()
     }
     
     //MARK: - Functions -
     
     @objc private func refreshCollection() {
-        getDatas()
+        getData()
     }
-    private func getDatas() {
+    private func getData() {
         let req = Request(path: URLs.base, headers: nil, params: nil)
-        _ = MainViewService.shared.executeRequest(dataRequest: req, onSuccess: { (images) in
-            self.refreshControl.endRefreshing()
-            self.images = images
-        }) { (error) in
-            self.refreshControl.endRefreshing()
-            print(error.localizedDescription)
+        _ = MainViewService.shared.executeRequest(dataRequest: req, onSuccess: { [weak self] (images) in
+            DispatchQueue.main.async {
+                self?.refreshControl.endRefreshing()
+                self?.images = images
+            }
+        }) { [weak self] (error) in
+            DispatchQueue.main.async {
+                self?.refreshControl.endRefreshing()
+                self?.handleError(error: error)
+            }
         }
     }
 
@@ -79,26 +83,30 @@ extension PinboardVC: UICollectionViewDelegate {
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Constants.CellIdentifiers.bottomView, for: indexPath) as? BottomView else { return UICollectionReusableView() }
-        cell.startAnimating()
+        //check if it is not the last page load more data
+//        cell.startAnimating()
         //load more items
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         // if it is the last page we return .zero if not we must show activityIndicator and request for more data
-        return CGSize(width: UIScreen.main.bounds.width, height: 40)
+        return images.isEmpty ? CGSize.zero : CGSize(width: UIScreen.main.bounds.width, height: 40)
     }
 }
 // MARK: -  PinboardVC collection dataSource  -
 extension PinboardVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images?.count ?? 0
+        return images.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.regularCell, for: indexPath) as? RegularCell else { return UICollectionViewCell() }
         //one of the urls was not founded (404 error)
-        let req = Request(path: (images![indexPath.item].urls?.regular)!, headers: nil, params: nil)
-        let thumbReq = Request(path: (images![indexPath.item].urls?.thumb)!, headers: nil, params: nil)
-        let _ = cell.image.set(withRequest: req, placeholder: #imageLiteral(resourceName: "mindvalley"), thumbnailRequest: thumbReq)
+        let req = Request(path: images[indexPath.item].urls.raw, headers: nil, params: nil)
+        let thumbReq = Request(path: images[indexPath.item].urls.thumb, headers: nil, params: nil)
+        cell.image.image = nil
+        let _ = cell.image.set(withRequest: req, placeholder: #imageLiteral(resourceName: "mindvalley"), thumbnailRequest: thumbReq, onError: { error in
+            print(error.localizedDescription)
+        })
         return cell
     }
 }

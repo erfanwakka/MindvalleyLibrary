@@ -15,11 +15,11 @@ struct Links: Decodable {
     var photos: String?
     var likes: String?
     var download: String?
-    
     private enum CodingKeys: String, CodingKey {
         case own = "self"
         case html
         case photos
         case likes
+        case download
     }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 struct Category: Decodable {
-    var id: Int?
-    var title: String?
-    var photo_count: Int?
+    var id: Int
+    var title: String
+    var photo_count: Int
     var links: Links
 }

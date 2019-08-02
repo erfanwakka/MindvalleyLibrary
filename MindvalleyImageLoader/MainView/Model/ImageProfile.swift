@@ -10,7 +10,7 @@ import Foundation
 
 
 struct ImageProfile: Decodable {
-    var small: String?
-    var medium: String?
-    var large: String?
+    var small: String
+    var medium: String
+    var large: String
 }

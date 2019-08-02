@@ -14,19 +14,19 @@ extension HTTPURLResponse {
         
         switch self.statusCode {
         case 400:
-            return .failure(libraryError.badRequest)
+            return .failure(error: libraryError.badRequest)
         case 401:
-            return .failure(libraryError.unAuthorized)
+            return .failure(error: libraryError.unAuthorized)
         case 403:
-            return .failure(libraryError.forbiden)
+            return .failure(error: libraryError.forbiden)
         case 404:
-            return .failure(libraryError.notFound)
+            return .failure(error: libraryError.notFound)
         case 400..<500:
-            return .failure(libraryError.notFound)
+            return .failure(error: libraryError.notFound)
         case 503:
-            return .failure(libraryError.maintenance)
+            return .failure(error: libraryError.maintenance)
         case 500 ..< 600:
-            return .failure(libraryError.serverUnAvailable)
+            return .failure(error: libraryError.serverUnAvailable)
         default:
             return .success
         }

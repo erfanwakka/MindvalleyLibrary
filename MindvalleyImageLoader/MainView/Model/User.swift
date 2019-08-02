@@ -10,9 +10,9 @@ import Foundation
 
 
 struct user: Decodable {
-    var id: String?
-    var username: String?
-    var name: String?
-    var profile_image: ImageProfile?
-    var links: Links?
+    var id: String
+    var username: String
+    var name: String
+    var profile_image: ImageProfile
+    var links: Links
 }

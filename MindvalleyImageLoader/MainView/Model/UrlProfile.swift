@@ -10,9 +10,9 @@ import Foundation
 
 
 struct UrlProfile: Decodable {
-    var raw: String?
-    var full: String?
-    var regular: String?
-    var small: String?
-    var thumb: String?
+    var raw: String
+    var full: String
+    var regular: String
+    var small: String
+    var thumb: String
 }
